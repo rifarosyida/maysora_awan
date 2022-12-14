@@ -10,7 +10,7 @@
                         <div class="inner-content">
                             <h4>Maysora</h4>
                             <br>
-                            <h6>ONLINE SHOP</h6>
+                            <h6>FASHION STORE</h6>
                             <div class="main-white-button scroll-to-section">
                                 <a href="{{url('/customer/produk/SC')}}">Shop Now</a>
                             </div>
