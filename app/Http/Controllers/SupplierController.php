@@ -168,11 +168,27 @@ class SupplierController extends Controller
      */
     public function destroy(Supplier $supplier)
     {
-        if (File::exists('storage/'.$supplier->gambar)) {
-            File::delete('storage/'.$supplier->gambar);
-        }
+        // if (File::exists('storage/'.$supplier->gambar)) {
+        //     File::delete('storage/'.$supplier->gambar);
+        // }
 
-        Supplier::find($supplier->id)->delete();
+        $storage = new StorageClient([
+            'keyFilePath' => public_path('key.json')
+        ]);
+
+        $supplier = Supplier::find($supplier->id);
+
+        $bucketName = env('GOOGLE_CLOUD_BUCKET');
+        $bucket = $storage->bucket($bucketName);
+        $object = $bucket->object($supplier->gambar);
+
+
+
+        $object->delete();
+        $supplier->delete();
+
+
+        // Supplier::find($supplier->id)->delete();
         return redirect()->route('supplier.index')
             ->with('success','Supplier berhasil dihapus');
     }
