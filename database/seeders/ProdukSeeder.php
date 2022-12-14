@@ -36,7 +36,7 @@ class ProdukSeeder extends Seeder
                 'diskon' => 0,
                 'deskripsi' => 'Strawberry Yoghurt Body scrub dapat membantu mengangkat sel-sel kulit mati dan juga dapat mencerahkan serta melembabkan karena body scrub ini memiliki kandungan Niacinamide, Vitamin B, Allantoin, Olive Oil, Yoghurt Juice Powder Extract, Strawberry Juice Powder Extract.',
                 'kategori_id' => 1,
-                'supplier_id' => 2
+                'supplier_id' => 1
             ],
             [
                 'nama_produk' => 'Emina Sugar Rush Lip Scrub 4.2 gr',
@@ -46,7 +46,7 @@ class ProdukSeeder extends Seeder
                 'diskon' => 0,
                 'deskripsi' => 'Emina Sugar Rush Lip Scrub merupakan scrub khusus bibir untuk menjaga kesehatan bibir dan mengangkat sel kulit mati.  ',
                 'kategori_id' => 1,
-                'supplier_id' => 3
+                'supplier_id' => 1
             ],
             [
                 'nama_produk' => 'FACETOLOGY Triple Care Sunscreen SPF 40+ PA+++ Hybrid',
@@ -58,7 +58,7 @@ class ProdukSeeder extends Seeder
                 SPF 40 PA+++, Brightening (with double Brightening Agents), Calming (with Centella asiatica, mugwort extract and Syrcalm technology)Dengan texture yang sangat ringan bahkan seperti air dan minim whitecast, membuat sunscreen ini uniq dan
                 akan menjadi pilihan yang tepat bagi consumers.',
                 'kategori_id' => 1,
-                'supplier_id' => 4
+                'supplier_id' => 1
             ],
             [
                 'nama_produk' => 'Golden Viera Soap',
@@ -68,7 +68,7 @@ class ProdukSeeder extends Seeder
                 'diskon' => 0,
                 'deskripsi' => 'Sabun yang diperkaya dengan bahan-bahan ekstrak alami herbal berkualitas yang baik untuk menutrisi kulit.',
                 'kategori_id' => 1,
-                'supplier_id' => 5
+                'supplier_id' => 1
             ],
             [
                 'nama_produk' => 'Hada Labo Gokujyun Ultimate Moisturizing Lotion',
@@ -79,7 +79,7 @@ class ProdukSeeder extends Seeder
                 'deskripsi' => 'adalah toner pelembab yang mengandung 3 jenis Hyaluronic Acid untuk membantu meningkatkan kelembaban pada kulit dan
                  mempertahankan keseimbangan serta kelembaban kulit. Lotion ini dapat mengunci kelembaban di dalam kulit sehingga kulit terhidrasi dengan baik. Kulit akan terasa lebih halus, lembut dan tetap elastis. Mengandung alkohol sebagai astringent yang mengurangi produksi minyak berlebih dan membuat kulit senantiasa terasa lebih segar',     
                 'kategori_id' => 1,
-                'supplier_id' => 6
+                'supplier_id' => 1
             ],
             [
                 'nama_produk' => 'Madame Gie Madame Perfect Brow - MakeUp Pensil alis Mekanik',
@@ -89,7 +89,7 @@ class ProdukSeeder extends Seeder
                 'diskon' => 0,
                 'deskripsi' => 'Pensil Alis Putar (Eyebrow Matic) yang dilengkapi dengan bulu sikat untuk memudahkan pembauran dan untuk merapikan alis. Memiliki formula waterproof, smudgeproof dan tahan lama.',
                 'kategori_id' => 1,
-                'supplier_id' => 7
+                'supplier_id' => 1
             ],
             [
                 'nama_produk' => 'Noera 3 In 1 Body Spray | Natural Deo Spray Penghilang Bau Badan BPOM',
@@ -100,7 +100,7 @@ class ProdukSeeder extends Seeder
                 'deskripsi' => 'Wajib banget yaa nyetok noera body spray yang super ampuh bikin kamu pede seharian tanpa BAU!.
                 cocok  juga untuk remaja yg baru pubertas dgn keringat berlebih pengganti deodorant, tidak bikin KETEK HITAM & BAJU KUNING',
                 'kategori_id' => 1,
-                'supplier_id' => 8
+                'supplier_id' => 1
             ],
             [
                 'nama_produk' => 'NPURE Face Wash / FOAM CENTELLA ASIATICA (Cica Series)',
@@ -110,7 +110,7 @@ class ProdukSeeder extends Seeder
                 'diskon' => 0,
                 'deskripsi' => 'Pembersih  Wajah Ringan dengan kandungan Real Centella Leaves, Green Tea, Mix Fruit Extract, dan Vit B3/Niacinamide',
                 'kategori_id' => 1,
-                'supplier_id' => 9
+                'supplier_id' => 1
             ],
             [
                 'nama_produk' => 'Scarlett Whitening Skin Smoothing Retinol Serum',
