@@ -15,7 +15,7 @@
                 <li class="list-group-item"><b>Deskripsi: </b>{{$supplier->deskripsi}}</li>
             </div>
             <div class="form-group">
-                <li class="list-group-item"><b>Gamar Supplier: </b><img src{{ 'https://storage.googleapis.com/dina_bucket/' . $supplier->gambar }}" height="150px" width="150px"></li>
+                <li class="list-group-item"><b>Gambar Supplier: </b><img src="{{ 'https://storage.googleapis.com/dina_bucket/' . $supplier->gambar }}" height="150px" width="150px"></li>
             </div>
             <div class="form-group float-left">
                 <a href="{{ route('supplier.index') }}" class="btn btn-lg btn-warning">Kembali</i></a>
