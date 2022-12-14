@@ -1,19 +1,20 @@
 <?php
+use App\Models\Cart;
 use Illuminate\Support\Facades\Auth;
-use App\Http\Controllers\CartController;
-use App\Http\Controllers\CustomerPageController;
-use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\KategoriController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Artisan;
+use App\Http\Controllers\CartController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\OrderController;
 use App\Http\Controllers\ProdukController;
+use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\SupplierController;
-use App\Http\Controllers\UserController;
-use App\Http\Controllers\OrderController;
-use App\Http\Controllers\OrderDetailController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\PembayaranController;
-use App\Models\Cart;
+use App\Http\Controllers\OrderDetailController;
+use App\Http\Controllers\CustomerPageController;
 use Symfony\Component\Finder\Iterator\CustomFilterIterator;
 
 /*
@@ -28,7 +29,7 @@ use Symfony\Component\Finder\Iterator\CustomFilterIterator;
 */
 
 
-Route::get('/migration', function ($id) {
+Route::get('/migration', function () {
     Artisan::call('migrate:fresh');
     Artisan::call('db:seed');
 });
