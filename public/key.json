@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "helpful-envoy-364304",
+  "private_key_id": "336160514664ea1b702d070d99991fee6ba6928e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCxaQtfx6C31/JK\nyLXnHaqrwK8qQeS8G7HHbG/QIQ3RkaINyRuON9XhgA41t7+GGEZSayFUkjxHONsp\n6r8T1EA7YXfXsZKhPSpBGq0WbQJN5LrV1k9HyrKlY4Rfk03Jr2XrAWbCw2CAXelo\nEmewEMYpc7wNO0n9M+UGiJWPw6BDJH5hC3r86Xrdex4A9+R5SsW170DKAFHPoayL\n9GOD/sRvEOdKjhJeIJhr0IE753d5zojMm5SYaob/3ibNCvdK53hNMeKkOFmPYxrm\nHKFQGF9+6wkg4CnFb+DTdbFjixikYLZMCjTPCpt0UO5iOj4hXsMptcpTCyMBD2BK\nrStofRhjAgMBAAECggEAEWdnLL8Q3Agsu5EOEJKp+WMT1qw+gVpMKe6lghWZXUY7\n+hM7sfYgnsMTtx8EBGZ25kNJMpqNRvAOcVcXO0hBVtycckX4HFDmR3BpANVdJQFm\nd2994+KVfOu9gtduCaDnJCiaiUpmZKFnMi+gCWHT4XbPlhK2EvICKo5qnFRfcUab\nXWHXOkTcBCJTYp57LCWE1st0EeHWNWiOInUYWxy9KcthhF/0/llEk5aAiIdG1Gt9\nlovhBcJSHLJd935wDGQizgSLKiOfmEEjwdL/rxm6k0/gDuOLiUj/6QjPnc0IY7Gd\nW+DfEnd1V7v+7MPwgIqVC8YK8FsmyphyUgHlq3j8SQKBgQDrsuYJkuC0Jg1RNRgj\nCDTddXVwFrPWCpW2xiuuoH67GJMR8iyDm7dy+/65T7AFvzlYVOFgAi/OlLhU3Yoy\n5/8lC+lfRfwHim+2NUrBKZcGE3QtnbmU+m7kHhyYeObu5Bu6cmLSvc0jy40rR0Wc\nbCldVmD3vFn4upSC5EvqqbwCiQKBgQDAsOYZwzluBV+TzhN2L67CBSylSpzoGy8B\nWkcw43usCPny2OPKFxMODkfkI7su0bl4Z7A9zKCzZpUsN2LJ6ig4MubKjLtx7OyY\n39QlGVDG5jNDmBWigQNQvMdV6FAE2aPt0jLXw5zXJJ67LyzwDTRF0TDdWa4IlDkI\n7he79Jv4iwKBgBHQJnSIxjS3P4Boq9dR8nTeQK7k+Fhv2lrC5WBAPvOy6sKLc/PK\nW/Xzt4+XxyzYA+R6HcJcx/Ir6TZ4u84XHIBXQx7xMhf7zW+O3YR1uTU7WSdtaS4q\nMyFIaU7YrFNXqATSSke1EoDnDFc9/rPQtNuaAKAYexBCQaEW0en9Q/lJAoGANvX+\nG9kQV25W7ay45lwBZ7vcGSVoDdg7FxKt/abVDqPcz0TH7EualsbCALOkX11YnpxM\nq8PjDmizIdKGbftJD4aNR7bOfFdMwOoO86n93U2pz5zghuJvlKbT4JALyuZdGKd8\n8wgLg14hnFh/Y9UQVN2vJ2O9/RpyDjcDNAw4NLMCgYEAzvYXuPFc/hnbz4wGhI3q\nn+FVqiFL06Oq9odhL+USBZlfzzKNqT5nwgaqMybAiqKWwbMF4F5esLEYK66/knf7\nsuiLkR8zmQ9BMBUdvfex0lmBJc4jZMcCmLHyjjh44HTdkUF+P+mPnxKf4gXIWotG\nxbCmrMamoZZ7ou5MOD3NmMQ=\n-----END PRIVATE KEY-----\n",
+  "client_email": "dina-project@helpful-envoy-364304.iam.gserviceaccount.com",
+  "client_id": "114872686190796641011",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dina-project%40helpful-envoy-364304.iam.gserviceaccount.com"
+}

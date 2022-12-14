@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\Supplier;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
+use Google\Cloud\Storage\StorageClient;
+use Illuminate\Support\Facades\Storage;
 
 class SupplierController extends Controller
 {
@@ -52,9 +54,49 @@ class SupplierController extends Controller
             'gambar' => 'nullable',
         ]);
 
-        if($request->file('gambar')){
-            $validatedData['gambar'] = $request->file('gambar')->store('images', 'public');
+        // if($request->file('gambar')){
+        //     $validatedData['gambar'] = $request->file('gambar')->store('images', 'public');
+        // }
+
+        if ($request->file('gambar')) {
+            $gambar_name = $request->file('gambar');
+            // $gambar_name = $request->file('gambar')->store('gambars', 'public');
+            $storage = new StorageClient([
+                'keyFilePath' => public_path('key.json')
+            ]);
+
+            $bucketName = env('GOOGLE_CLOUD_BUCKET');
+            $bucket = $storage->bucket($bucketName);
+
+            //get filename with extension
+            $filenamewithextension = pathinfo($request->file('gambar')->getClientOriginalName(), PATHINFO_FILENAME);
+            // $filenamewithextension = $request->file('gambar')->getClientOriginalName();
+
+            //get filename without extension
+            $filename = pathinfo($filenamewithextension, PATHINFO_FILENAME);
+
+            //get file extension
+            $extension = $request->file('gambar')->getClientOriginalExtension();
+
+            //filename to store
+            $filenametostore = $filename . '_' . uniqid() . '.' . $extension;
+
+            Storage::put('public/uploads/' . $filenametostore, fopen($request->file('gambar'), 'r+'));
+
+            $filepath = storage_path('app/public/uploads/' . $filenametostore);
+
+            $object = $bucket->upload(
+                fopen($filepath, 'r'),
+                [
+                    'predefinedAcl' => 'publicRead'
+                ]
+            );
+
+            // delete file from local disk
+            Storage::delete('public/uploads/' . $filenametostore);
+            $validatedData['gambar'] = $filenametostore;
         }
+
 
         Supplier::create($validatedData);
 
