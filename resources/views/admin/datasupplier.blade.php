@@ -51,7 +51,7 @@
                  <td>{{($supplier->id)}}</td>
                  <td>{{($supplier->nama_supplier)}}</td>
                  <td>{{($supplier->deskripsi)}}</td>
-                 <td><img width="90px" src="/storage/{{$supplier->gambar}}"></td>
+                 <td><img width="90px" src="{{ 'https://storage.googleapis.com/dina_bucket/' . $supplier->gambar}}"></td>
                  <td width="250px">
                  <form action="{{ route('supplier.destroy',$supplier->id) }}" method="POST" onsubmit="return confirm('Apakah anda yakin menghapus data?')"> 
                     <a href="{{ route('supplier.show',$supplier->id)}}" class="btn btn-info" title="detail"><i class="fa fa-eye"></i></a>  
