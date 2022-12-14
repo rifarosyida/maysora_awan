@@ -122,7 +122,7 @@ class ProdukSeeder extends Seeder
                 Meningkatkan proses regenerasi kulit sehingga sel kulit mati terangkat dan kulit terlihat lebih cerah serta halus,
                 Membantu menyamarkan tampilan pon-porbesar, dan Membantu meningkatkan produksi Kolagen dan elastin sehingga kulit terasa lebih kenyal',
                 'kategori_id' => 1,
-                'supplier_id' => 10
+                'supplier_id' => 1
             ],
             [
                 'nama_produk' => 'SKINTIFIC - 360 Crystal Massager Lifting Eye Cream',
@@ -134,7 +134,7 @@ class ProdukSeeder extends Seeder
                 sembab, serta mencerahkan area bawah mata yang gelap. Dilengkapi dengan teknologi 360 ° Crystal Rolling Massager, sebuah teknologi Lift-Tech ™ 
                 dari Jerman dengan 184 permukaan kristal dan dapat berputar searah 360 °, sehingga membantu daya serap kandungan aktif pada kulit dan mengurangi garis-garis halus yang terlihat & kantung mata di waktu yang bersamaan.',
                 'kategori_id' => 1,
-                'supplier_id' => 11
+                'supplier_id' => 1
             ],
             [
                 'nama_produk' => 'AZARINE HYDRASHOOTHE SUNSCREEN GEL SPF45 PA++++',
@@ -145,7 +145,7 @@ class ProdukSeeder extends Seeder
                 'deskripsi' => 'Tabir surya wajah dalam bentuk gel ( water base) yang sangat ringan, dingin dan mudah meresap untuk seluruh jenis kulit 
                 termasuk kulit berminyak dan acne prone skin. Di formulasikan dengan kandungan bahan alami Propolis, aloe Vera, green tea dan delima untuk melindungi kulit dari sinar UV A & UV B serta menutrisi kulit.  ', 
                 'kategori_id' => 1,
-                'supplier_id' => 12
+                'supplier_id' => 1
             ],
             //Fahion Wanita
             [
@@ -157,7 +157,7 @@ class ProdukSeeder extends Seeder
                 'deskripsi' => 'dibuat dengan bahan rayon viscose dengan ukuran Lebar dada -/+ 110cm, Panjang baju depan  -/+ 63cm,
                 Panjang baju belakang -/+ 70cm, Panjang lengan -/+ 55cm, Lebar bahu -/+ 40cm. Allsize Fit To XL ( 1 Ukuran )', 
                 'kategori_id' => 2,
-                'supplier_id' => 13
+                'supplier_id' => 1
             ],
             [
                 'nama_produk' => 'Candy Oversize',
@@ -167,7 +167,7 @@ class ProdukSeeder extends Seeder
                 'diskon' => 0,
                 'deskripsi' => 'Bahan Katun Poly Fit XL dengan ukuran Lingkar dada 124cm, Panjang baju 59cm, dan Panjang lengan 43cm', 
                 'kategori_id' => 2,
-                'supplier_id' => 13
+                'supplier_id' => 1
             ],
             [
                 'nama_produk' => 'HIJAB SPORT BAHAN STELLA PREMIUM',
@@ -179,7 +179,7 @@ class ProdukSeeder extends Seeder
                 Cocok bgt buat jilbab olahraga, dipake dirumah sehari-hari atau buat kerja yg mengharuskan memakai jilbab yg dimasukkan ke dalem baju ini tuh cocok bgt ya kak.
                 Bahan STELLA PREMIUM super nyaman tidak transparan, ketebalan pas.', 
                 'kategori_id' => 2,
-                'supplier_id' => 13
+                'supplier_id' => 1
             ],
             [
                 'nama_produk' => 'Inner leher | manset leher',
@@ -189,7 +189,7 @@ class ProdukSeeder extends Seeder
                 'diskon' => 0,
                 'deskripsi' => 'Bahan kaos super nyaman, tidak bikin gatel di leher/dada. Cocok bgt buat kalian yg pny baju/outer2 yg kancingnya aga ke bawah jadi tinggal kalian tambah inner leher aja, tanpa harus pake manset badan uda aman bgt ya, dada dan leher ga keliatan lagi deh. Jadi lbh nyaman dipake.', 
                 'kategori_id' => 2,
-                'supplier_id' => 13
+                'supplier_id' => 1
             ],
             [
                 'nama_produk' => 'Inner Rib Ruffle Turtleneck',
@@ -199,7 +199,7 @@ class ProdukSeeder extends Seeder
                 'diskon' => 0,
                 'deskripsi' => 'Bahan kain rib premium yang Halus, Tebal, dan Lentur sehingga sangat lembut dan menyerap keringat.', 
                 'kategori_id' => 2,
-                'supplier_id' => 13
+                'supplier_id' => 1
             ],
             [
                 'nama_produk' => 'Kaos Rib Basic',
@@ -209,7 +209,7 @@ class ProdukSeeder extends Seeder
                 'diskon' => 0,
                 'deskripsi' => 'LD 100cm bisa melar sampai 110cm⁣. PB +/- 70cm. Bahan plisket adem gak terawang', 
                 'kategori_id' => 2,
-                'supplier_id' => 13
+                'supplier_id' => 1
             ],
             [
                 'nama_produk' => 'Paris Premium Voal',
@@ -220,7 +220,7 @@ class ProdukSeeder extends Seeder
                 'deskripsi' => 'Kerudung Segi Empat Paris Voal // Paris Premium // Segi Empat Paris Polos. 
                 berbahan paris namun tegak seperti voal, mudah dibentuk dan tidak mudah letoy, lemes tidak licin sama sekali, finishing garis tepi.', 
                 'kategori_id' => 2,
-                'supplier_id' => 13
+                'supplier_id' => 1
             ],
             [
                 'nama_produk' => 'PASMINA CERUTY BABYDOL IMPORT',
@@ -230,7 +230,7 @@ class ProdukSeeder extends Seeder
                 'diskon' => 0,
                 'deskripsi' => 'Pasmina CERUTY. Bahan babydol premium. sangat jatuh. TEPI JAHIT RAPI. Ukuran 175X75cm. Mudah di bentuk', 
                 'kategori_id' => 2,
-                'supplier_id' => 13
+                'supplier_id' => 1
             ],
             [
                 'nama_produk' => 'PASMINA INNER PREMIUM 2 in 1',
@@ -241,7 +241,7 @@ class ProdukSeeder extends Seeder
                 'deskripsi' => 'pashmina inner 2in1 . Cocok di pakai daily maupun acara formal/casual. 
                 Gak perlu pakai inner terpisah karna sudah include innernya langsung.', 
                 'kategori_id' => 2,
-                'supplier_id' => 13
+                'supplier_id' => 1
             ],
             [
                 'nama_produk' => 'PASMINA PLISKET PREMIUM TANPA GARIS TENGAH',
@@ -252,7 +252,7 @@ class ProdukSeeder extends Seeder
                 'deskripsi' => 'Pashmina Plisket Premium. Plisket nya full sampe ke ujung. Mudah diatur.
                 Tegak di dahi.  Tidak mudah kusut. Bisa di styling sesuai keinginan kalian. Tersedia banyak pilihan warna', 
                 'kategori_id' => 2,
-                'supplier_id' => 13
+                'supplier_id' => 1
             ],
             [
                 'nama_produk' => 'Pashmina Silk Premium',
@@ -263,7 +263,7 @@ class ProdukSeeder extends Seeder
                 'deskripsi' => 'Bahanya yang Exclusive dan Mewah jadi nilai Plus buat Pashima iniiii gak perlu di strika.
                 Matterial CARDENZA Silk. Jahit Tepi seluruh bagian. Tidak terawang. Flowy dan Mudah di bentuk. Serat halus.', 
                 'kategori_id' => 2,
-                'supplier_id' => 13
+                'supplier_id' => 1
             ],
             [
                 'nama_produk' => 'SEGIEMPAT INNER 2in1',
@@ -274,7 +274,7 @@ class ProdukSeeder extends Seeder
                 'deskripsi' => 'Hijab super simple yang ngga harus ribet, tinggal slup lansung pakai aja, 
                 tapi tetap bikin look kamu beauty & stylist ', 
                 'kategori_id' => 2,
-                'supplier_id' => 13
+                'supplier_id' => 1
             ],
      
             //Perempuan Kesehatan
@@ -288,7 +288,7 @@ class ProdukSeeder extends Seeder
                 Fiber untuk melancarkan pencernaan dan detox tubuh. Low Calories dengan Gula Stevia dan lebih aman untuk penderita diabetes.
                 Aman untuk penderita maag. Dapat digunakan mulai umur 13 tahun.',  
                 'kategori_id' => 3,
-                'supplier_id' => 13
+                'supplier_id' => 1
             ],
             [
                 'nama_produk' => 'Noera Collagen Drink',
@@ -299,7 +299,7 @@ class ProdukSeeder extends Seeder
                 'deskripsi' => 'New formula dengan kandungan salmon collagen dan glutathione terbaik, lebih rendah kalori, rendah lemak dan rendah karbohidrat, lebih sehat.
                 Kualitas premium & harga terjangkau',
                 'kategori_id' => 3,
-                'supplier_id' => 13
+                'supplier_id' => 1
             ],
 
             //souvenir
@@ -311,7 +311,7 @@ class ProdukSeeder extends Seeder
                 'diskon' => 0,
                 'deskripsi' => 'KOTAK KADO TANPA ISI !!!. Sudah sama pita dan kartu ucapan kartu ucapan bisa pilih (cantumkan di pesan ya)',          
                 'kategori_id' => 4,
-                'supplier_id' => 13
+                'supplier_id' => 1
             ],
             ]);
     }
