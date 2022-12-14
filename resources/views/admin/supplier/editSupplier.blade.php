@@ -29,7 +29,7 @@
                 <div class="form-group">
                     <label for="gambar">Gambar Supplier</label>
                     <input type="file" class="form-control @error('gambar') is-invalid @enderror" name="gambar" value="/storage/{{ $supplier->gambar }}">
-                    <img src="/storage/{{ $supplier->gambar }}" height="150px" width="150px">
+                    <img src="{{ 'https://storage.googleapis.com/dina_bucket/' . $supplier->gambar }}" height="150px" width="150px">
                     @error('gambar')
                     <div class="invalid-feedback">
                         {{ $message }}
