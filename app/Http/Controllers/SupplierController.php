@@ -163,23 +163,23 @@ class SupplierController extends Controller
         $bucket = $storage->bucket($bucketName);
         $object = $bucket->object($supplier->gambar);
 
-        if ($request->file('image')) {
+        if ($request->file('gambar')) {
             if ($supplier->gambar && $object != null) {
                 $object->delete();
                 //get filename with extension
-                $filenamewithextension = pathinfo($request->file('image')->getClientOriginalName(), PATHINFO_FILENAME);
-                // $filenamewithextension = $request->file('image')->getClientOriginalName();
+                $filenamewithextension = pathinfo($request->file('gambar')->getClientOriginalName(), PATHINFO_FILENAME);
+                // $filenamewithextension = $request->file('gambar')->getClientOriginalName();
 
                 //get filename without extension
                 $filename = pathinfo($filenamewithextension, PATHINFO_FILENAME);
 
                 //get file extension
-                $extension = $request->file('image')->getClientOriginalExtension();
+                $extension = $request->file('gambar')->getClientOriginalExtension();
 
                 //filename to store
                 $filenametostore = $filename . '_' . uniqid() . '.' . $extension;
 
-                Storage::put('public/uploads/' . $filenametostore, fopen($request->file('image'), 'r+'));
+                Storage::put('public/uploads/' . $filenametostore, fopen($request->file('gambar'), 'r+'));
 
                 $filepath = storage_path('app/public/uploads/' . $filenametostore);
 
