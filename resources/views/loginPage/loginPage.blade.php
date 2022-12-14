@@ -3,6 +3,7 @@
 <html lang="en">
 
 <head>
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <title>
     Halaman Login
   </title>
