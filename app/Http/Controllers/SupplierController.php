@@ -149,12 +149,62 @@ class SupplierController extends Controller
         ];
 
         $validatedData = $request->validate($rules);
-        if($request->file('gambar')){
-            $validatedData['gambar'] = $request->file('gambar')->store('images', 'public');
-        }
+        // if($request->file('gambar')){
+        //     $validatedData['gambar'] = $request->file('gambar')->store('images', 'public');
+        // }
 
-        Supplier::where('id', $supplier->id)
-        ->update($validatedData);
+        $storage = new StorageClient([
+            'keyFilePath' => public_path('key.json')
+        ]);
+
+        $supplier = Supplier::find($supplier->id);
+
+        $bucketName = env('GOOGLE_CLOUD_BUCKET');
+        $bucket = $storage->bucket($bucketName);
+        $object = $bucket->object($supplier->gambar);
+
+        if ($request->file('image')) {
+            if ($supplier->gambar && $object != null) {
+                $object->delete();
+                //get filename with extension
+                $filenamewithextension = pathinfo($request->file('image')->getClientOriginalName(), PATHINFO_FILENAME);
+                // $filenamewithextension = $request->file('image')->getClientOriginalName();
+
+                //get filename without extension
+                $filename = pathinfo($filenamewithextension, PATHINFO_FILENAME);
+
+                //get file extension
+                $extension = $request->file('image')->getClientOriginalExtension();
+
+                //filename to store
+                $filenametostore = $filename . '_' . uniqid() . '.' . $extension;
+
+                Storage::put('public/uploads/' . $filenametostore, fopen($request->file('image'), 'r+'));
+
+                $filepath = storage_path('app/public/uploads/' . $filenametostore);
+
+                $object = $bucket->upload(
+                    fopen($filepath, 'r'),
+                    [
+                        'predefinedAcl' => 'publicRead'
+                    ]
+                );
+
+                // delete file from local disk
+                Storage::delete('public/uploads/' . $filenametostore);
+            }
+
+            $image_name = $filenametostore;
+        } else {
+            $image_name = $supplier->gambar;
+        }
+        $supplier->gambar = $image_name;
+        $supplier->nama_supplier = $validatedData['nama_supplier'];
+        $supplier->deskripsi = $validatedData['deskripsi'];
+        $supplier->save();
+
+        // Supplier::where('id', $supplier->id)
+        // ->update($validatedData);
 
         return redirect()->route('supplier.index')
         ->with('success', 'Supplier berhasil diperbarui');
