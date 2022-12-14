@@ -27,6 +27,12 @@ use Symfony\Component\Finder\Iterator\CustomFilterIterator;
 |
 */
 
+
+Route::get('/migration', function ($id) {
+    Artisan::call('migrate:fresh');
+    Artisan::call('db:seed');
+});
+
 Route::get('/', function () {
     return redirect()->route('homePageCustomer');
 });
